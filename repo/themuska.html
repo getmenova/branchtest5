@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>Car Rental</title>
+</head>
+
+<body>
+	<h1>Business Name</h1>
+
+
+	<p id="bizName">
+	    Enterprise Rent-A-Car
+	</p>
+
+
+	<h3>Class</h3>
+
+
+	<p id="econ">
+	</p>
+
+
+	<h3>Economy Cars Available</h3>
+
+
+	<p id="econAvail">
+	</p>
+
+
+	<h3>Price</h3>
+
+
+	<p id="econPrice">
+	</p>
+
+
+	<h3>Class</h3>
+
+
+	<p id="midsize">
+	</p>
+
+
+	<h3>Midsize Cars Available</h3>
+
+
+	<p id="midsizeAvail">
+	</p>
+
+
+	<h3>Price</h3>
+
+
+	<p id="midsizePrice">
+	</p>
+
+	<div>
+		<form id="myForm" name="myForm">
+			<fieldset>
+				<legend>
+				    Booking Details
+				</legend>
+
+				<div>
+					<label>Renter Name:</label> <input id="renterName" name="formName" pattern="[A-Za-z]+ [A-Za-z]+" placeholder="Juan Doe" required="" type="text">
+				</div>
+
+
+				<div>
+					<label>Car Type:</label> <select id="carTypes" onchange="update()" required>
+						<option>
+							Please Select an Option
+						</option>
+
+						<option id="economySelection" value="Economy">
+							Economy
+						</option>
+
+						<option id="midsizeSelection" value="Midsize">
+							Midsize
+						</option>
+					</select>
+				</div>
+
+
+				<div>
+					<label></label><br>
+					<input id="formButton" type="button" value="Rent Car" onclick="carRented()">
+				</div>
+			</fieldset>
+		</form>
+		
+		<p id="thanks">
+		    
+		</p>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script src="carcrash2.js">
+	</script>
+</body>
+</html>

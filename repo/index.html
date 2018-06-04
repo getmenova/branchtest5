@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="ie=edge" http-equiv="X-UA-Compatible">
+<title>Car Rental</title>
+</head>
+<body>
+<h1>Pick a car, any car</h1>
+<p id="busiName"></p>
+<!--<h2>Economy Cars Total</h2>
+500
+<!--<p id="econCarsTotal"></p> 
+<h2>Economy Cars Available</h2>
+<p id="econCarsavail"></p>
+<h2>Midsize Cars Total</h2>
+200
+<!--<p id="midSizeCarsTotal"></p> 
+<h2>Midsize Cars Available</h2>
+<p id="midSizeCarsAvail"></p>
+<tr>-->
+            <!--<td>
+            Select Car Type:
+            </td>
+            
+            <td colspan="1">
+              <select id="carType">
+                <option value="Economy">Economy @ $50/day</option>
+          <option value="Midsize">Midsize @ $100/day</option>
+        
+        </select> -->
+        <p></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              First Name:
+            </td>
+            <td>
+              <input id="userfirstName" type="text">
+            </td>
+            <td>
+                 <p></p>
+              Last Name:
+            </td>
+            <td>
+              <input id="userlastName" type="text">
+            </td>
+          </tr>
+          <p></p>
+<button id="confirmButton" onclick="getCustomerData()">RENT YOUR CAR NOW!</button> 
+</script>
+</script>
+
+<!--button onclick="displayCars()">Update Availability</button> 
+<button onclick="midsizeClick()">Rent out 1 Midsize Car</button> 
+<button onclick="econsizeClick()">Rent out 1 Economy Car</button> -->
+
+
+<script>
+    
+var priceDisplay = function(carChoice) {
+    if (carChoice.value == "1")
+        document.getElementById("message").innerHTML = "You picked economy for $50/day! X available.";
+        if (carChoice.value == "1")
+        //run econclick() to decrement and display remaining
+  	if (carChoice.value == "2")
+        document.getElementById("message").innerHTML = "You picked midsize for $100/day! X available.";
+     //run midsizeclick() to decrement and display remaining
+    if (carChoice.value == "3")
+        document.getElementById("message").innerHTML = "Pick a size!"; 
+        
+}
+
+</script>
+<script> 
+
+$('#confirmButton').click(function() {
+        
+   var toAdd = $('input[name=checkListItem]').val();
+   $('.list').append('<div class="item">' + toAdd + '</div>');
+        
+});</script>
+<select id="leave" onchange="priceDisplay(this);"
+>
+  <option value="3">Pick Size</option>
+  <option value="1">Economy</option>
+  <option value="2">Midsize</option>
+ 
+  
+ </select>
+
+<div id="message"></div>
+
+
+<script src="object.js" type="text/javascript">
+
+</script>
+</body>
+</html>

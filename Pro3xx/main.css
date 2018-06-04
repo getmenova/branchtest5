@@ -1,0 +1,49 @@
+/* Let's make this thing beautiful! - add a background*/
+
+body {
+  background-image: url('https://images7.alphacoders.com/333/333217.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Include h1 so we know what we are TALKIN' BOUT*/
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 80px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Let's make a cozy nest for our quotes to be displayed*/
+
+.quoteholder {
+  position: relative;
+  height: 300px;
+  width: 750px;
+  margin: 0 auto;
+  background-color: #92C60F;
+  opacity: 0.9;
+  filter: alpha(opacity=60);
+}
+/* Let's declare how we want our quotes and authors to look! */
+#quote {
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+#author {
+  text-align: right;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+/* Let's stylize our buttons with the Montserrat we pulled from Google's API font library*/
+
+.btn {
+  position: center;;
+  bottom: 0px;
+  font-size: 26px;
+  margin-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+}

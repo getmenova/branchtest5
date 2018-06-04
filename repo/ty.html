@@ -1,0 +1,22 @@
+Enter Name
+<input id="firstNameInput" type="text">
+<div>
+Select Car Size:
+<form onsubmit= "rentcar(this.value)">
+  <select id = "carpick" onchange = "displayCars()">
+  <option value = "1">Econ Car @ $50/day</option>
+  <option value = "2">Midsize Car @ 100/day</option>
+  </select>
+ <button type="submit" id="ordercar" value="Order Now" onclick = "getCustomerData().displayCars()"></button>
+</form>
+
+</div>
+
+<h1>Econ Cars Remaining</h1>
+<p id="econcarsavail"></p>
+<!-- Display Econcars -->
+<h1>Midsize Cars Remaining</h1>
+<p id="midsizecarsavail"></p>
+<!-- Display Midsizecars -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="car.js" type="text/javascript"></script>
